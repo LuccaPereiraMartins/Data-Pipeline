@@ -1,0 +1,96 @@
+2024-10-30 21:36:58,500 - test_loggername - INFO - Starting running pipeline
+2024-10-30 21:36:58,561 - test_loggername - INFO - Joining the dataframes
+2024-10-30 21:36:58,584 - test_loggername - INFO - Upload succeeded
+2024-10-30 21:36:58,588 - test_loggername - INFO - Upload succeeded
+2024-10-30 21:36:58,591 - test_loggername - INFO - Upload succeeded
+2024-10-30 21:36:58,591 - test_loggername - INFO - Finished running pipeline
+2024-10-30 21:37:55,194 - test_loggername - INFO - Starting running pipeline
+2024-10-30 21:37:55,239 - test_loggername - INFO - Joining the dataframes
+2024-10-30 21:37:55,261 - test_loggername - INFO - Upload succeeded
+2024-10-30 21:37:55,265 - test_loggername - INFO - Upload succeeded
+2024-10-30 21:37:55,268 - test_loggername - INFO - Upload succeeded
+2024-10-30 21:37:55,268 - test_loggername - INFO - Finished running pipeline
+2024-10-30 21:40:20,346 - test_loggername - INFO - Started running pipeline
+2024-10-30 21:40:20,411 - test_loggername - INFO - Joining the dataframes
+2024-10-30 22:38:33,420 - test_loggername - INFO - Started running pipeline
+2024-10-30 22:38:33,453 - test_loggername - INFO - Modifying dataframe
+2024-10-30 22:41:48,518 - test_loggername - INFO - Started running pipeline
+2024-10-30 22:41:48,550 - test_loggername - INFO - Modifying dataframe
+2024-10-30 22:47:05,599 - test_loggername - INFO - Started running pipeline
+2024-10-30 22:47:05,630 - test_loggername - INFO - Modifying dataframe
+2024-10-30 22:47:21,587 - test_loggername - INFO - Started running pipeline
+2024-10-30 22:47:21,619 - test_loggername - INFO - Modifying dataframe
+2024-10-30 22:47:36,990 - test_loggername - INFO - Started running pipeline
+2024-10-30 22:47:37,052 - test_loggername - INFO - Modifying dataframe
+2024-10-30 22:48:07,883 - test_loggername - INFO - Started running pipeline
+2024-10-30 22:48:07,914 - test_loggername - INFO - Modifying dataframe
+2024-10-30 22:48:19,463 - test_loggername - INFO - Started running pipeline
+2024-10-30 22:48:19,495 - test_loggername - INFO - Modifying dataframe
+2024-10-30 22:49:31,511 - test_loggername - INFO - Started running pipeline
+2024-10-30 22:49:31,542 - test_loggername - INFO - Modifying dataframe
+2024-10-30 22:50:46,658 - test_loggername - INFO - Started running pipeline
+2024-10-30 22:50:46,673 - test_loggername - INFO - Modifying dataframe
+2024-10-30 22:51:02,866 - test_loggername - INFO - Started running pipeline
+2024-10-30 22:51:02,879 - test_loggername - INFO - Modifying dataframe
+2024-10-30 22:51:03,170 - test_loggername - INFO - Modifying dataframe
+2024-10-30 22:51:54,620 - test_loggername - INFO - Started running pipeline
+2024-10-30 22:51:54,652 - test_loggername - INFO - Modifying dataframe
+2024-10-30 22:51:55,353 - test_loggername - INFO - Modifying dataframe
+2024-10-30 22:52:21,880 - test_loggername - INFO - Started running pipeline
+2024-10-30 22:52:21,913 - test_loggername - INFO - Modifying dataframe
+2024-10-30 22:52:22,616 - test_loggername - INFO - Modifying dataframe
+2024-10-30 22:52:23,396 - test_loggername - INFO - Finished running pipeline
+2024-10-30 22:53:03,459 - test_loggername - INFO - Started running pipeline
+2024-10-30 22:53:03,472 - test_loggername - INFO - Modifying dataframe
+2024-10-30 22:53:03,760 - test_loggername - INFO - Modifying dataframe
+2024-10-30 22:53:22,062 - test_loggername - INFO - Started running pipeline
+2024-10-30 22:53:22,099 - test_loggername - INFO - Modifying dataframe
+2024-10-30 22:53:22,840 - test_loggername - INFO - Modifying dataframe
+2024-10-30 22:55:02,043 - test_loggername - INFO - Started running pipeline
+2024-10-30 22:55:02,077 - test_loggername - INFO - Modifying dataframe
+2024-10-30 22:55:02,821 - test_loggername - INFO - Modifying dataframe
+2024-10-30 22:55:03,570 - test_loggername - INFO - Finished running pipeline
+2024-10-30 22:56:25,910 - test_loggername - INFO - Started running pipeline
+2024-10-30 22:56:25,944 - test_loggername - INFO - Modifying dataframe
+2024-10-30 22:56:26,656 - test_loggername - INFO - Modifying dataframe
+2024-10-30 22:56:27,360 - test_loggername - INFO - Finished running pipeline
+2024-10-30 23:06:24,805 - test_loggername - INFO - Started running pipeline
+2024-10-30 23:06:24,837 - test_loggername - INFO - Modifying dataframe
+2024-10-30 23:06:25,542 - test_loggername - INFO - Modifying dataframe
+2024-10-30 23:06:26,240 - test_loggername - INFO - Finished running pipeline
+2024-10-30 23:07:31,341 - test_loggername - INFO - Started running pipeline
+2024-10-30 23:07:31,375 - test_loggername - INFO - Modifying dataframe
+2024-10-30 23:08:15,646 - test_loggername - INFO - Started running pipeline
+2024-10-30 23:08:15,679 - test_loggername - INFO - Modifying dataframe
+2024-10-30 23:08:16,938 - test_loggername - INFO - Modifying dataframe
+2024-10-30 23:09:17,102 - test_loggername - INFO - Started running pipeline
+2024-10-30 23:09:17,134 - test_loggername - INFO - Modifying dataframe
+2024-10-30 23:09:37,825 - test_loggername - INFO - Started running pipeline
+2024-10-30 23:09:37,859 - test_loggername - INFO - Modifying dataframe
+2024-10-30 23:10:06,113 - test_loggername - INFO - Started running pipeline
+2024-10-30 23:10:06,144 - test_loggername - INFO - Modifying dataframe
+2024-10-30 23:10:07,281 - test_loggername - INFO - Modifying dataframe
+2024-10-30 23:12:29,584 - test_loggername - INFO - Started running pipeline
+2024-10-30 23:12:40,896 - test_loggername - INFO - Started running pipeline
+2024-10-30 23:12:40,926 - test_loggername - INFO - Modifying dataframe
+2024-10-30 23:12:42,053 - test_loggername - INFO - Modifying dataframe
+2024-10-30 23:12:43,464 - test_loggername - INFO - Upload succeeded
+2024-10-30 23:12:43,467 - test_loggername - INFO - Upload succeeded
+2024-10-30 23:12:43,469 - test_loggername - INFO - Upload succeeded
+2024-10-30 23:12:43,470 - test_loggername - INFO - Finished running pipeline
+2024-10-31 20:23:58,531 - test_loggername - INFO - Started running pipeline
+2024-10-31 20:24:59,285 - test_loggername - INFO - Started running pipeline
+2024-10-31 20:26:37,072 - test_loggername - INFO - Started running pipeline
+2024-10-31 20:26:37,111 - test_loggername - INFO - Modifying dataframe
+2024-10-31 20:26:38,549 - test_loggername - INFO - Modifying dataframe
+2024-10-31 20:26:40,046 - test_loggername - INFO - Upload succeeded
+2024-10-31 20:26:40,049 - test_loggername - INFO - Upload succeeded
+2024-10-31 20:26:40,051 - test_loggername - INFO - Upload succeeded
+2024-10-31 20:26:40,051 - test_loggername - INFO - Finished running pipeline
+2024-10-31 20:30:46,865 - test_loggername - INFO - Started running pipeline
+2024-10-31 20:30:46,930 - test_loggername - INFO - Modifying dataframe
+2024-10-31 20:30:47,543 - test_loggername - INFO - Modifying dataframe
+2024-10-31 20:30:48,377 - test_loggername - INFO - Upload succeeded
+2024-10-31 20:30:48,379 - test_loggername - INFO - Upload succeeded
+2024-10-31 20:30:48,382 - test_loggername - INFO - Upload succeeded
+2024-10-31 20:30:48,382 - test_loggername - INFO - Finished running pipeline
