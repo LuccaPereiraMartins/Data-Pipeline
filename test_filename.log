@@ -94,3 +94,5 @@
 2024-10-31 20:30:48,379 - test_loggername - INFO - Upload succeeded
 2024-10-31 20:30:48,382 - test_loggername - INFO - Upload succeeded
 2024-10-31 20:30:48,382 - test_loggername - INFO - Finished running pipeline
+2024-10-31 21:21:14,080 - test_loggername - WARNING - Upload unsuccessful
+2024-10-31 21:23:15,594 - test_loggername - WARNING - Upload unsuccessful
