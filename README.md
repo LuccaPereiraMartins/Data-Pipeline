@@ -1,5 +1,3 @@
-## GitHub Pages Intro
+## Simple Data Pipeline
 
-Testing GitHub Pages preview
-
-Brief description of project or how to access data
+Space to display clean data
