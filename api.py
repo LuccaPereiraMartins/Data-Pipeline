@@ -24,7 +24,7 @@ Looks v tricky
 
 
 # CONSTANTS
-GITHUB_TOKEN = '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'
+GITHUB_TOKEN = '###'
 REPO_OWNER = 'LuccaPereiraMartins'
 REPO_NAME = 'Data-Pipeline'
 README_FILE = 'README.md'
