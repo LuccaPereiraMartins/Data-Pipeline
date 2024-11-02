@@ -1,84 +1,70 @@
-from fastapi import FastAPI
-from logging_config import logger
-import pipeline_offline
+from flask import Flask, request, jsonify, send_file
 import pandas as pd
-import requests
-import base64
+import os
 
-
-'''
-Work on an API to display df_all, or test.csv
-First time learning about and working with APIs
-
-GitHub Pages is a static hosting service, only supports static files
-Consider GitHub's REST API to push data to a repo (i.e. the readme that is then displayed on Pages)
-Looks v tricky
-'''
-
-
-
-
-# Final try
-
-
-
-
-# CONSTANTS
-GITHUB_TOKEN = '###'
-REPO_OWNER = 'LuccaPereiraMartins'
-REPO_NAME = 'Data-Pipeline'
-README_FILE = 'README.md'
-NEW_CONTENT = f'Updated README\n\n{data_specific_json}'
-
-api_url = f'https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/contents/{README_FILE}'
-
-response = requests.get(url, headers={'Authorization': f'token {GITHUB_TOKEN}'})
-response_data = response.json()
-
-
-
-
-# Second try
-
-
-
+# use flask server for api
+# initialise flask application
+app = Flask(__name__)
 
 # retrieve data from processed folder
 data = pd.read_csv('processed/test.csv', index_col='ticker')
 
-# could access a particular instrument and field instead
-instrument = 'TESLA INC'
-field = ['date','price']
-
-data_specific = data.loc[instrument,field]
-data_specific_json = data_specific.to_dict()
-
-# GitHub pages URL
-url = 'https://luccapereiramartins.github.io/Data-Pipeline/'
-
-# Make a POST request to upload
-response = requests.post(url, json=data_specific_json)
-
-# Check response
-if response.status_code == 200:
-    logger.info('Upload successful')
-else:
-    logger.warn('Upload unsuccessful')
+# create simple route, use decorator to make accessible
+# define path to access (after the /)
+@app.route('/')
+def home():
+    return 'HOME PAGE'
 
 
+# create some more methods
+# GET request data from a specific resource
+# POST create a resource
+# PUT update a resource
+# DELETE delete a resource
 
-'''
 
-initial try
+# create a method to return all the data as a dictionary
+@app.route('/all', methods=['GET'])
+def return_all():
+    # return the dictionary of specified description with a 200 status code if passed
+    return jsonify(data.to_dict()), 200
 
-# create an instance of FastAPI class
-app = FastAPI()
+# create a method to return all the data as a downloadable csv
+@app.route('/download_all', methods=['GET'])
+def download_all():
+    # Define the absolute or relative path to the file
+    path = os.path.join(os.getcwd(), 'processed', 'test.csv')
 
-# route decorator creating endpoint for HTTP GET requests
-# at the url path /get-message
-# define asynchronous function read() linked to decorator
-@app.get("/get-message")
-async def read(data_specific: pd.DataFrame):
-    return 'test'
+    # Check if the file exists
+    if not os.path.isfile(path):
+        return "File not found", 404
 
-'''
+    return send_file(path, as_attachment=True), 200
+
+# create a method to return the row data for a specified description
+@app.route('/specific-data/<description>', methods=['GET'])
+def get_specific(description):
+    data_specific = data.loc[description,:]
+    # return the dictionary of specified description with a 200 status code if passed
+    return jsonify(data_specific.to_dict()), 200
+
+# TODO fix how to return the index too, orient='index' argument doesn't seem to work
+
+
+# TODO attempt at creating a get post method
+@app.route('/append-description/<description>', methods=['POST'])
+def append_description(description):
+    # suppose the specific description had a valid row of data associated with it
+    row = None
+    data.append(row)
+    return jsonify(data.to_dict())
+
+
+# Example URL after running script
+# http://127.0.0.1:5000/specific-data/TESLA%20INC
+
+
+
+# basic line to run flask server
+if __name__ == '__main__':
+    app.run(debug=True)
