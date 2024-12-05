@@ -1,13 +1,14 @@
 import requests
 import re
 from bs4 import BeautifulSoup
-from typing import List
-
 
 
 def read_file(
     link: str = 'https://www.cftc.gov/dea/futures/deanymesf.htm',
-):
+) -> list:
+    """
+    Fetches content in a URL and returns the text inside as a list, line by line
+    """
 
     # get the response from link
     r = requests.get(
@@ -30,19 +31,26 @@ def read_file(
 
         # split the data by lines
         if pre_tags:
-            data = pre_tags[0].get_text().split("\n")
 
-        return data
+            data = pre_tags[0].get_text().split("\n")
+            return data
+
+        return []
 
     else:
         # ideally, use a logger instead of prints
         print(f'Request unsuccesful, error code: {r.status_code}')
 
+        return []
 
 
 def find_values(
     data: list
 ) -> dict:
+
+    """
+    Extract the contract name and open interest values from data
+    """
 
     # clean up the data, could be made into its own function
     # might not even be that necessary, mostly used to trim top lines
