@@ -6,7 +6,7 @@ def scan_directory(
     directory: str
     ) -> dict:
     """
-    retrive the file stats from a given directory
+    retrieve the file stats from a given directory
     """
 
     # initialise the empty dictionary we will append values to
@@ -41,9 +41,11 @@ def scan_directory(
     return file_stats
 
 
-def print_stats(file_stats):
+def print_stats(file_stats: dict):
+    """
+    Print the statistics for each file extension in specified format
+    """
 
-    # print the statistics for each file extension in specified format
     for ext, stats in sorted(file_stats.items()):
         print(f"{ext} {stats['count']} {stats['max_size']} {stats['total_size']}")
 
