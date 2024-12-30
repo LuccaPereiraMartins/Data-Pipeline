@@ -1,4 +1,9 @@
 
+
+class transport():
+    pass
+
+
 class vehicle():
 
     def __init__(self, name, max_speed, mileage):
@@ -20,6 +25,7 @@ class bus(vehicle):
 
     def __str__(self):
         return f'{self.name}'
+
 
 school_bus = bus("route_12", 100, 40)
 print(school_bus,school_bus.seating_capacity(),sep="\n")
